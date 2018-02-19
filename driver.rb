@@ -44,6 +44,7 @@ class Driver
 			raise "Something bad has happened"
 		end
 	end
+	
 	#These methods increment the stats and are called as necessary.
 	#They were separated for ease of testing.
 	def add_toy

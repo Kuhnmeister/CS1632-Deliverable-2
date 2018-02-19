@@ -25,7 +25,6 @@ class Game
 	
 	#After driver creation/initialization this method keeps moving the driver until he/she leaves the map.
 	#Once the driver leaves the city, this method calls the print_stats to print the drivers stats.
-	#Returns the drivers stats in array for testing purposes, tests can look to see if the drivers location is Monroeville or Downtown.
 	def new_run i
 		this_driver = driver_initialize()
 		#Driver movement loops until the driver is found outside of the map.
@@ -45,8 +44,9 @@ class Game
 	end
 	
 	
-	#This method creates a new driver, seeds their random number generator and calls the initialize method.
-	#Returns driver so tests can check for nil and driver seed value
+	# This method creates a new driver, seeds their random number generator and calls the initialize method.
+	# Basically just a setter method for multiple variables
+	# Returns driver
 	def driver_initialize
 		#Driver initialization happens here.
 		driver = Driver::new
